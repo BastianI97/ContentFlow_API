@@ -1,0 +1,114 @@
+{
+  "info": {
+    "_postman_id": "279c0bdd-625a-4a01-891c-8283ecbc160c",
+    "name": "ContentFlow_API_Evaluacion2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54274364",
+    "_collection_link": "https://go.postman.co/collection/54274364-279c0bdd-625a-4a01-891c-8283ecbc160c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET Usuarios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/usuarios\n",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "usuarios\n"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Publicaciones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/publicaciones",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "publicaciones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Usuarios",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"_id\": \"user_api_test_003\",\r\n  \"nombre\": \"Usuario Prueba Postman\",\r\n  \"correo\": \"usuario.postman@example.com\",\r\n  \"pais\": \"Chile\",\r\n  \"genero\": \"No especificado\",\r\n  \"dispositivo\": \"Desktop\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "usuarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Publicaciones",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"_id\": \"pub_api_test_004\",\r\n  \"usuario_id\": \"user_api_test_001\",\r\n  \"contenido\": \"Publicación de prueba desde Postman.\",\r\n  \"categoria\": \"Tecnología\",\r\n  \"hashtags\": [\"#mongodb\", \"#api\"],\r\n  \"tipo\": \"Texto\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/publicaciones",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "publicaciones"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
